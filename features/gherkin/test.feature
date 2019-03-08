@@ -3,8 +3,4 @@ Feature: Test Me
   @parent @sprint153
   Scenario: navigate to google home page
     When I navigate to the home page
-    # And I click on google search button 
-
-
-  Scenario: test now  
-  	When test it
+    # And I click on google search button

@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="87f27399-869a-4c90-bce6-ee7a932f9e31" name="Default Changelist" comment="" />
+    <list default="true" id="87f27399-869a-4c90-bce6-ee7a932f9e31" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/features/gherkin/test.feature" beforeDir="false" afterPath="$PROJECT_DIR$/features/gherkin/test.feature" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,11 +42,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/features/gherkin/test.feature">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
+              <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
             </state>
           </provider>
         </entry>
@@ -66,7 +69,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/rakefile">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="105">
@@ -136,13 +139,13 @@
         <option value="$PROJECT_DIR$/config/environments/staging_1.yml" />
         <option value="$PROJECT_DIR$/features/support/helper/form_fill.rb" />
         <option value="$PROJECT_DIR$/features/gherkin/test2.feature" />
-        <option value="$PROJECT_DIR$/features/gherkin/test.feature" />
         <option value="$PROJECT_DIR$/features/step_definitions/basic_steps.rb" />
         <option value="$PROJECT_DIR$/rakefile" />
         <option value="$PROJECT_DIR$/features/support/helper/browser.rb" />
         <option value="$PROJECT_DIR$/config/database.yml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/features/support/hooks.rb" />
+        <option value="$PROJECT_DIR$/features/gherkin/test.feature" />
       </list>
     </option>
   </component>
@@ -164,6 +167,17 @@
             <path>
               <item name="default_suite_template" type="b2602c69:ProjectViewProjectNode" />
               <item name="default_suite_template" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="default_suite_template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="default_suite_template" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="default_suite_template" type="b2602c69:ProjectViewProjectNode" />
+              <item name="default_suite_template" type="462c0819:PsiDirectoryNode" />
+              <item name="features" type="462c0819:PsiDirectoryNode" />
+              <item name="gherkin" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="default_suite_template" type="b2602c69:ProjectViewProjectNode" />
@@ -372,7 +386,7 @@
       <workItem from="1551851155419" duration="10669000" />
       <workItem from="1551936403113" duration="5878000" />
       <workItem from="1552023901833" duration="2697000" />
-      <workItem from="1552029391791" duration="325000" />
+      <workItem from="1552029391791" duration="1022000" />
     </task>
     <servers />
   </component>
@@ -409,7 +423,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29932000" />
+    <option name="totallyTimeSpent" value="30629000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1440" height="814" extended-state="6" />
@@ -538,17 +552,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/features/gherkin/test.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="41" lean-forward="true" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/rakefile">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="3" lean-forward="true" selection-start-line="7" selection-start-column="3" selection-end-line="7" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/features/gherkin/test.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="41" selection-start-line="5" selection-start-column="41" selection-end-line="5" selection-end-column="41" />
         </state>
       </provider>
     </entry>
