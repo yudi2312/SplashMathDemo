@@ -1,0 +1,2 @@
+default: FIG_NEWTON_FILE=staging_1.yml --format progress --format html --out=results/features_report.html
+staging_1: FIG_NEWTON_FILE=staging_1.yml
