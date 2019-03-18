@@ -10,3 +10,5 @@ require_relative 'helper/form_fill'
 
 World(PageObject::PageFactory)
 World(FormHelper)
+
+ENV['BROWSER'] = 'CHROME'
