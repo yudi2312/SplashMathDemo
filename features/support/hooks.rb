@@ -1,5 +1,5 @@
 Before do |scenario|
-  @browser = Browser.open_browser "safari"
+  @browser = Browser.open_browser "chrome"
 end
 
 After do |scenario|

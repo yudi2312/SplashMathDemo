@@ -1,8 +1,82 @@
 require 'rubygems'
 require 'cucumber'
 require 'cucumber/rake/task'
+require 'parallel_tests/tasks'
+require 'shellWords'
 
 
 Cucumber::Rake::Task.new(:features) do |t|
   t.cucumber_opts = "--format pretty"
 end
+
+
+# namespace :ci do
+#   desc 'Run rubocop for CI environment'
+#   task :rubocop do
+#     args = %w{
+#       --require ./lib/rubocop/formatter/progress_formatter_no_report
+#       --format Rubocop::Formatter::ProgressFormatterNoReport
+#       --require rubocop/formatter/checkstyle_formatter
+#       --format Rubocop::Formatter::CheckstyleFormatter
+#       --rails
+#       --fail-level error
+#       --out tmp/checkstyle-result.xml
+#     }
+#     sh 'rubocop', *args
+#   end
+#
+#   desc 'Run brakeman for CI environment'
+#   task :brakeman do
+#     args = %w{
+#       --no-progress
+#       --exit-on-warn
+#       --output tmp/brakeman-output.tabs
+#       --output tmp/brakeman-output.txt
+#     }.join ' '
+#     cmd = %(brakeman #{args} 2>&1 | awk '{ print "."; fflush() } END { print "\\n" }' ORS=)
+#     sh *%W(bash -o pipefail -c #{cmd}) do |ok, result|
+#       unless ok
+#         report = Pathname('tmp/brakeman-output.txt')
+#         error = "Brakeman check failed with exit code #{result.exitstatus}:\n"
+#         error << report.read if report.exist?
+#         fail error
+#       end
+#     end
+#   end
+#
+#   task :build => :cleanup do
+#     ENV['CI'] = '1'
+#     jobs = Rake.application.options.thread_pool_size.to_i + 1
+#     if jobs > 1
+#       ENV['DISABLE_SPRING'] = '1'
+#       ENV['PARALLEL_TEST_PROCESSORS'] ||= jobs.to_s
+#       Rake::Task['ci:prepare_parallel'].invoke
+#       Rake::MultiTask['ci:run_parallel'].invoke
+#     else
+#       ENV['SPEC'] = '-O spec/spec.opts spec'
+#       Rake::Task['ci:prepare'].invoke
+#       Rake::Task['ci:run'].invoke
+#     end
+#   end
+#
+#   desc 'Remove artifacts created by CI run'
+#   task :cleanup do
+#     files = Dir.glob '{
+#       tmp/checkstyle-result.xml,
+#       tmp/brakeman-output.*,
+#       tmp/rspec-report*.xml,
+#       tmp/failing_specs.log,
+#       tmp/spec_summary.log
+#     }'.gsub /\s+/, ''
+#     rm files if files.any?
+#   end
+#
+#   task :prepare => ['secrets', 'db:create', 'db:migrate', 'db:export_test:reset']
+#   task :prepare_parallel => ['secrets', 'db:create', 'db:migrate', 'parallel:create', 'parallel:prepare', 'parallel:export_test:reset']
+#
+#   task :run => [:brakeman, :rubocop, 'spec']
+#   multitask :run_parallel => [:brakeman, :rubocop, 'parallel:spec']
+# end
+#
+# desc 'Run the full CI suite (use --jobs <n> for parallel run)'
+# task :ci => 'ci:build'
