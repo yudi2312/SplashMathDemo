@@ -24,6 +24,7 @@
     <orderEntry type="library" scope="PROVIDED" name="fig_newton (v1.0, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="gherkin (v5.1.0, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="i18n (v1.6.0, RVM: ruby-2.3.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="json (v2.2.0, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_json (v1.13.1, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="multi_test (v0.1.2, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="page-object (v2.2.5, RVM: ruby-2.3.7) [gem]" level="application" />
@@ -32,6 +33,7 @@
     <orderEntry type="library" scope="PROVIDED" name="parallel_tests (v2.28.0, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rake (v12.3.2, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="regexp_parser (v1.3.0, RVM: ruby-2.3.7) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="report_builder (v1.8, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.8.2, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rspec-support (v3.8.0, RVM: ruby-2.3.7) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rubyzip (v1.2.2, RVM: ruby-2.3.7) [gem]" level="application" />

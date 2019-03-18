@@ -7,6 +7,6 @@ gem "rake"
 gem "rspec-expectations"
 gem "fig_newton"
 gem "faker"
-# gem "parallel_tests"
+gem "parallel_tests"
 
-gem 'parallel_tests', group: [:development, :test]
+gem 'report_builder'
