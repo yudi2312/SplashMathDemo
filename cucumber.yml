@@ -1,6 +1,3 @@
 default: FIG_NEWTON_FILE=staging_1.yml --format progress --format html --out=results/features_report.html
 staging_1: FIG_NEWTON_FILE=staging_1.yml
 jenkins: FIG_NEWTON_FILE=staging_1.yml --format json -o results/jenkins/JSON/cucumber_<%= ENV['TEST_ENV_NUMBER'].to_s %>.json
-
-
-#parallel: FIG_NEWTON_FILE=staging_1.yml -f pretty -f json --out=results/JSON/results_<%= ENV['TEST_ENV_NUMBER'].to_s %>.json
