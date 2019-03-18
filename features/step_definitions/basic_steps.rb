@@ -4,4 +4,5 @@ When(/^I navigate to the home page$/) do
   on_page(SplashMath)
   enter_field_value("search bar", "test")
   click_element("google search")
+  fail "here"
 end
